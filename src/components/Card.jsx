@@ -156,7 +156,7 @@ const Card = () => {
         </div>
       </div>
       <div
-        className="grid grid-cols-2 md:grid-cols-3 gap-2 flex-wrap justify-center p-2"
+        className="grid grid-cols-2 md:grid-cols-3 gap-2 flex-wrap justify-center p-2 mx-5 sm:mx-[11.6%]"
         id="card-container"
       >
         {dataPlaces.map((place, index) => (
@@ -182,7 +182,7 @@ const Card = () => {
                 </figcaption>
                 <h1 className="card-title">{place.placeName}</h1>
               </div>
-              <div className="absolute top-0 z-50 sm:relative text-white sm:text-black flex mx-4">
+              <div className="absolute top-0 sm:relative text-white sm:text-black flex mx-4">
                 <button
                   onClick={(e) => handleBookMark(e, place.id)}
                   className="card-bookmark"
